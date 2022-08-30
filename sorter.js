@@ -17,7 +17,7 @@
 // };
 
 
-// console.log(mergeTwoLists([1,2,4], [1,3,4]))
+
 
 
 //The code up top is what i wrote for this problem. This had to do with something called Lists that
@@ -53,3 +53,5 @@ var mergeTwoLists = function(list1, list2){
     }
     return dummyPointer.next
 }
+
+console.log(mergeTwoLists([1,2,4], [1,3,4]))
