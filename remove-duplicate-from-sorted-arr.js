@@ -1,0 +1,16 @@
+//given a sorted array, remove any duplicate numbers and return the mutated array
+
+
+var removeDuplicates = function(nums) {
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i] === nums[i + 1] || nums[i] === nums[i - 1]){
+            nums.splice(i, 1)
+            i--
+        }
+    }
+    return nums
+};
+
+console.log(removeDuplicates([1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,9]))
+console.log(removeDuplicates([0,0,0,0]))
+console.log(removeDuplicates([-1,0,0,0,0,3]))
